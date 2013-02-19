@@ -32,9 +32,10 @@
 	<header>
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</header><!-- header -->
-
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
+	
+	
+	<!-- <div id="mainmenu"> -->
+		<?php $this->widget('application.extensions.mbmenu.MbMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'Usuario', 'url'=>array('/usuarios/admin')),
@@ -46,7 +47,8 @@
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
-	</div><!-- mainmenu -->
+		
+	<!--</div> --><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,

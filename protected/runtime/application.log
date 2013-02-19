@@ -1609,3 +1609,63 @@ Stack trace:
 REQUEST_URI=/condor-proyecto-prueba/index.php?r=site/contact
 HTTP_REFERER=http://localhost/condor-proyecto-prueba/index.php?r=site/page&view=about
 ---
+2013/02/18 22:19:54 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/condor-proyecto-prueba/protected/views/layouts/main.php(50): CBaseController->widget('bootstrap.widge...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#5 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/condor...', Array, true)
+#7 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/condor-proyecto-prueba/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#13 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#14 /var/www/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/condor...', Array, true)
+#15 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#16 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#17 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#21 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#22 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /var/www/condor-proyecto-prueba/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/condor-proyecto-prueba/index.php?r=site/login
+HTTP_REFERER=http://localhost/condor-proyecto-prueba/index.php?r=site/index
+---
+2013/02/18 22:19:55 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/condor-proyecto-prueba/protected/views/layouts/main.php(50): CBaseController->widget('bootstrap.widge...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#5 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/condor...', Array, true)
+#7 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/condor-proyecto-prueba/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/condor...')
+#13 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/condor...', Array, true)
+#14 /var/www/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/condor...', Array, true)
+#15 /var/www/condor-proyecto-prueba/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#16 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#17 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#21 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#22 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /var/www/condor-proyecto-prueba/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/condor-proyecto-prueba/index.php?r=site/login
+HTTP_REFERER=http://localhost/condor-proyecto-prueba/index.php?r=site/index
+---
