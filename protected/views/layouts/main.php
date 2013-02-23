@@ -65,19 +65,34 @@
 		Este sitio web está liberado bajo una licencia <a href="http://creativecommons.org/licenses/by/3.0/"target="_blank">Creative Commons Attribution 3.0 License</a>.<br/>
 		<?php echo Yii::app()->params['adminEmail']?>
 		<aside>
-	<p>
-    	<a href="http://jigsaw.w3.org/css-validator/check/referer">
-        	<img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="¡CSS Válido!" />
-    	</a>
-    	
-    	<a href="http://jigsaw.w3.org/css-validator/check/referer">
-    		<img style="border:0;width:88px;height:31px"
-        	src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        	alt="¡CSS Válido!" />
-	</p>
-	</aside>
+			<article>
+			
+        	<img style="border:0;width:58px;height:31px"
+            src="./images/HTML5-Black.png"
+            alt="¡HTML5!" />
+
+            
+            <img style="border:0;width:58px;height:31px"
+            src="./images/HTML5-Styling.png"
+            alt="¡HTML5 CSS3!" />
+            
+            
+            <img style="border:0;width:58px;height:31px"
+            src="./images/HTML5-Multimedia.png"
+            alt="¡HTML5 Multimedia!" />
+            
+            
+            <img style="border:0;width:58px;height:31px"
+            src="./images/HTML5-3D-Effects.png"
+            alt="¡HTML5 Multimedia!" />            
+            
+            
+            <img style="border:0;width:58px;height:31px"
+            src="./images/HTML5-Semantics.png"
+            alt="¡HTML5 Semantica!" />
+            
+			</article>
+		</aside>
 	</footer><!-- footer -->
 
 </div><!-- page -->
